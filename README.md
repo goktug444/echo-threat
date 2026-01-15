@@ -137,8 +137,12 @@ Projede “devriye bekleme süresi” global bir değişken olarak yönetilir:
 - **Git LFS** 
 
 ### Klonlama
-Bu repo LFS dosyaları içerir. Önce LFS’i aktif edin:
+> Not (Önemli): Bu proje Git LFS kullanır. ZIP indirimi bazı durumlarda LFS dosyalarını eksik getirebilir.
+> En sorunsuz kurulum için aşağıdaki adımları izleyin.
 
 ```bash
 git lfs install
 git clone https://github.com/goktug444/echo-threat.git
+cd echo-threat
+git lfs pull
+
